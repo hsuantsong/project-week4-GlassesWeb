@@ -1,3 +1,454 @@
-.index-title {
-  font-size: 100px;
+/*section--banner*/
+
+.banner {
+  background: url(../assets/images/home-header.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 296px 0;
+
+  @include pad {
+    background: url(../assets/images/home-header-sm.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @include mobile {
+    padding: 144px 0;
+  }
+
+  h1 {
+    font-size: $size-36;
+    color: $dark-red;
+
+    @include mobile {
+      font-size: $size-16;
+    }
+  }
+
+  h2 {
+    font-size: $size-64;
+    color: $dark-red;
+    font-weight: bold;
+
+    @include mobile {
+      font-size: $size-24;
+    }
+  }
+}
+
+.banner-content {
+  text-align: right;
+
+  .btn {
+    display: inline-block;
+    margin-top: 4px;
+    background: $red;
+
+    a {
+      font-size: $size-20;
+      display: inline-block;
+      color: $white;
+      padding: 6px 12px;
+    }
+  }
+}
+
+
+/*section--about*/
+
+.about {
+  padding: 80px 0;
+  background: $beige;
+
+  @include pad {
+    padding-bottom: 56px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+
+  h2 {
+    font-size: $size-48;
+    color: $dark-red;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include mobile {
+      font-size: $size-24;
+    }
+  }
+}
+
+
+.about-detail {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li {
+    display: flex;
+    width: 23.6%;
+    flex-direction: column;
+    align-items: center;
+
+    @include pad {
+      width: 48%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    font-size: $size-24;
+    color: $dark-red;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: $size-16;
+
+    @include pad {
+      margin-bottom: 24px;
+    }
+  }
+
+  img {
+    width: 100px;
+    margin-bottom: 16px;
+  }
+}
+
+
+
+/*section--series*/
+
+.series {
+  padding: 80px 0;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  h2 {
+    font-size: $size-48;
+    color: $dark-red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include mobile {
+      font-size: $size-24;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+
+.series-detail {
+  display: flex;
+  justify-content: space-between;
+
+  @include pad {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 416px;
+
+    @include pad {
+      width: 336px;
+      margin-bottom: 8px;
+    }
+
+    @include mobile {
+      width: 348px;
+    }
+  }
+
+  li:not(:last-child) {
+    @include pad {
+      margin-bottom: 24px;
+    }
+  }
+
+  h3 {
+    font-size: $size-48;
+    color: $red;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+/*section--collab*/
+
+.collab {
+  background: url(../assets/images/index-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 80px 0;
+
+  @include pad {
+    background: url(../assets/images/index-bg-md.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @include mobile {
+    background: url(../assets/images/index-bg-sm.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 0;
+  }
+
+  h2 {
+    font-size: $size-48;
+    color: $white;
+    font-weight: bold;
+    margin-bottom: 48px;
+    text-align: center;
+
+    @include mobile {
+      font-size: $size-24;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.collab-detail {
+  display: flex;
+
+  @include pad {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li:not(:last-child) {
+    @include pad {
+      margin-bottom: 24px;
+    }
+  }
+
+  h3 {
+    font-size: $size-48;
+    text-align: center;
+    color: $red;
+    font-weight: 900;
+    font-style: italic;
+    background: $white;
+    padding: 8px 0;
+  }
+
+  img {
+    width: 648px;
+  }
+
+  .mobile {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  .pc {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+
+/*section--recommend*/
+
+.recommend {
+  padding: 80px 0;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  h2 {
+    font-size: $size-48;
+    font-weight: bold;
+    color: $dark-red;
+    margin-bottom: 48px;
+    text-align: center;
+
+    @include mobile {
+      font-size: $size-24;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+
+.recommend-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li {
+    width: 23.6%;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    @include pad {
+      width: 48%;
+
+      &:nth-child(-n+2) {
+        margin-bottom: 24px;
+      }
+    }
+
+    @include mobile {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .name {
+    padding-bottom: 8px;
+    font-size: $size-16;
+  }
+
+  .review {
+    font-size: $size-16;
+  }
+
+  .recommend-date {
+    font-size: $size-14;
+    color: #707070;
+    padding-top: 48px;
+
+    @include pad {
+      padding-top: 72px;
+    }
+  }
+
+}
+
+/*section--contact*/
+
+.contact {
+  background: $beige;
+  padding: 80px 0;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  h2 {
+    font-size: $size-48;
+    font-weight: bold;
+    color: $dark-red;
+    margin-bottom: 48px;
+    text-align: center;
+
+    @include pad {
+      margin-bottom: 24px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    font-size: $size-20;
+    margin-bottom: 24px;
+
+    @include pad {
+      font-size: $size-16;
+    }
+  }
+
+  form {
+    font-size: $size-16;
+  }
+}
+
+
+.contact-form {
+  width: 49%;
+  margin: 0 auto;
+
+  @include pad {
+    width: 82.75%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+
+  input:not(.agreement) {
+    width: 100%;
+    display: block;
+    margin-bottom: 16px;
+    padding: 6px 12px;
+  }
+
+  label:not(.agreement) {
+    margin-bottom: 8px;
+
+    @include pad {
+      margin-bottom: 16px;
+    }
+  }
+
+  input[type="submit"] {
+    width: 66.66%;
+    margin: 0 auto;
+    color: $white;
+    padding: 16px 0;
+    margin-top: 48px;
+    border: none;
+    font-size: $size-24;
+    background: $red;
+
+    &:hover {
+      background: $dark-red;
+    }
+
+    @include pad {
+      width: 58.33%;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-top: 24px;
+      font-size: $size-16;
+    }
+  }
+
+  .comment {
+    height: 136px;
+  }
+
+  span {
+    @include mobile {
+      display: block;
+      text-indent: 24px;
+    }
+  }
 }
