@@ -1,13 +1,13 @@
 /*section--banner*/
 
 .banner {
-  background: url(../assets/images/home-header.png) no-repeat;
+  background: url(./images/home-header.png) no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 296px 0;
 
   @include pad {
-    background: url(../assets/images/home-header-sm.png) no-repeat;
+    background: url(./images/home-header-sm.png) no-repeat;
     background-size: cover;
     background-position: center center;
   }
@@ -190,19 +190,19 @@
 /*section--collab*/
 
 .collab {
-  background: url(../assets/images/index-bg.png) no-repeat;
+  background: url(./images/index-bg.png) no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 80px 0;
 
   @include pad {
-    background: url(../assets/images/index-bg-md.png) no-repeat;
+    background: url(./images/index-bg-md.png) no-repeat;
     background-size: cover;
     background-position: center center;
   }
 
   @include mobile {
-    background: url(../assets/images/index-bg-sm.png) no-repeat;
+    background: url(./images/index-bg-sm.png) no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 40px 0;
