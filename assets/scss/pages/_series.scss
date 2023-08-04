@@ -1,9 +1,5 @@
 .menu {
 
-    ul {
-        display: flex;
-        text-align: center;
-    }
 
     li {
         width: 33.33%;
@@ -32,7 +28,6 @@
 }
 
 .series-banner {
-    display: flex;
     height: 296px;
 
     @include mobile {
@@ -59,7 +54,6 @@
 
     h2 {
         font-size: $size-42;
-        text-align: center;
         font-weight: medium;
 
         @include mobile {
@@ -69,7 +63,6 @@
 
     h3 {
         font-size: $size-32;
-        text-align: center;
         margin-bottom: 32px;
 
         @include mobile {
@@ -81,9 +74,7 @@
 }
 
 .series-product {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     li {
         width: 32.1%;
@@ -102,8 +93,7 @@
 
     .product-detail {
         font-size: $size-24;
-        display: flex;
-        justify-content: space-between;
+
 
         .price {
             color: $primary;
@@ -112,7 +102,6 @@
     }
 
     .product-color {
-        display: flex;
 
         .color {
             width: 24px;
@@ -134,7 +123,7 @@
 }
 
 .pagination {
-    display: flex;
+
     justify-content: center;
 
     @include pad {

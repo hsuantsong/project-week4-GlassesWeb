@@ -1,0 +1,124 @@
+.store {
+    padding-top: 96px;
+    padding-bottom: 80px;
+
+    @include pad {
+        padding-top: 80px;
+    }
+
+    @include mobile {
+        padding: 40px;
+    }
+}
+
+.store-header {
+
+    .left-border {
+        border: 8px solid $primary;
+        width: 0px;
+    }
+
+    h2 {
+        font-size: $size-48;
+        font-weight: bold;
+        margin-left: 16px;
+
+        @include mobile {
+            font-size: $size-24;
+        }
+    }
+
+}
+
+.store-area {
+    margin-bottom: 40px;
+    align-items: center;
+
+    @include mobile {
+        margin-bottom: 24px;
+    }
+
+    label {
+        font-size: $size-24;
+        margin-right: 16px;
+
+        @include mobile {
+            font-size: 15px;
+            margin-right: 8px;
+        }
+    }
+
+    select {
+        width: 304px;
+        padding: 6px 0 6px 12px;
+        border: 1px solid #CED4DA;
+        font-size: 18px;
+        color: #495057;
+    }
+}
+
+.store-list {
+    flex-wrap: wrap;
+    flex-direction: flex-start;
+
+    .store-list-card {
+        color: $info-3;
+        width: 32.1%;
+        border: 1px solid #00000020;
+
+        @include pad {
+            width: 48.27%;
+            margin-bottom: 24px;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &:nth-child(5) {
+            margin-right: auto;
+            margin-left: 24px;
+
+            @include pad {
+                margin-left: 0;
+            }
+        }
+
+        h3 {
+            font-size: $size-24;
+            padding: 8px 0;
+            padding-left: 24px;
+            border-bottom: 2px solid #00000020;
+        }
+    }
+
+    .store-info {
+        padding-left: 24px;
+        padding-right: 24px;
+
+        li:nth-child(1) {
+            margin-top: 16px;
+        }
+
+        .material-symbols-outlined {
+            margin-right: 12px;
+        }
+
+        a,
+        p {
+            font-size: $size-20;
+            color: $info-3;
+        }
+    }
+
+    .store-more {
+        background: $dark;
+
+        a {
+            display: block;
+            font-size: 19px;
+            padding: 16px 0;
+            color: $light;
+        }
+    }
+}
