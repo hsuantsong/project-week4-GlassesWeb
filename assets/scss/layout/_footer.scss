@@ -1,5 +1,5 @@
 .footer {
-  background: $red;
+  background: $primary;
   padding-top: 48px;
   padding-bottom: 32px;
 
@@ -12,7 +12,7 @@
   }
 
   a {
-    color: $white;
+    color: $light;
     font-size: $size-16;
   }
 
@@ -20,18 +20,12 @@
 
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
 
   @include mobile {
     float: right;
   }
 
-  ul {
-    display: flex;
-  }
 
   .footer-list {
     @include mobile {
@@ -75,8 +69,8 @@
 
 
 .footer-contact {
-  color: $white;
-  border-bottom: 1px solid $white;
+  color: $light;
+  border-bottom: 1px solid $light;
   padding-bottom: 32px;
   margin-bottom: 32px;
 
@@ -86,11 +80,9 @@
   }
 
   li {
-    display: flex;
     align-items: center;
 
     &:nth-child(1) {
-      margin-bottom: 8px;
 
       @include mobile {
         margin-bottom: 11px;
@@ -108,7 +100,7 @@
     }
   }
 
-  p {
+  a {
     font-size: $size-36;
 
     @include mobile {
@@ -119,9 +111,7 @@
 
 
 .terms {
-  color: $white;
-  display: flex;
-  justify-content: space-between;
+  color: $light;
   align-items: center;
 
   @include mobile {
@@ -130,7 +120,6 @@
   }
 
   ul {
-    display: flex;
 
     @include mobile {
       font-size: $size-16;

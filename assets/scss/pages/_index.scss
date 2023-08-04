@@ -18,7 +18,7 @@
 
   h1 {
     font-size: $size-36;
-    color: $dark-red;
+    color: $secondary;
 
     @include mobile {
       font-size: $size-16;
@@ -27,7 +27,7 @@
 
   h2 {
     font-size: $size-64;
-    color: $dark-red;
+    color: $secondary;
     font-weight: bold;
 
     @include mobile {
@@ -39,26 +39,22 @@
 .banner-content {
   text-align: right;
 
-  .btn {
+  a {
+    font-size: $size-20;
     display: inline-block;
+    color: $light;
+    padding: 6px 12px;
     margin-top: 4px;
-    background: $red;
-
-    a {
-      font-size: $size-20;
-      display: inline-block;
-      color: $white;
-      padding: 6px 12px;
-    }
+    background: $primary;
   }
 }
+
 
 
 /*section--about*/
 
 .about {
-  padding: 80px 0;
-  background: $beige;
+  background: $success;
 
   @include pad {
     padding-bottom: 56px;
@@ -71,10 +67,8 @@
 
   h2 {
     font-size: $size-48;
-    color: $dark-red;
+    color: $secondary;
     font-weight: bold;
-    margin-bottom: 24px;
-    text-align: center;
 
     @include mobile {
       font-size: $size-24;
@@ -84,12 +78,9 @@
 
 
 .about-detail {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
   li {
-    display: flex;
     width: 23.6%;
     flex-direction: column;
     align-items: center;
@@ -105,9 +96,8 @@
 
   h3 {
     font-size: $size-24;
-    color: $dark-red;
+    color: $secondary;
     font-weight: bold;
-    margin-bottom: 8px;
   }
 
   p {
@@ -120,7 +110,6 @@
 
   img {
     width: 100px;
-    margin-bottom: 16px;
   }
 }
 
@@ -129,7 +118,6 @@
 /*section--series*/
 
 .series {
-  padding: 80px 0;
 
   @include mobile {
     padding: 40px 0;
@@ -137,10 +125,8 @@
 
   h2 {
     font-size: $size-48;
-    color: $dark-red;
+    color: $secondary;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 48px;
 
     @include mobile {
       font-size: $size-24;
@@ -151,8 +137,6 @@
 
 
 .series-detail {
-  display: flex;
-  justify-content: space-between;
 
   @include pad {
     flex-direction: column;
@@ -180,10 +164,9 @@
 
   h3 {
     font-size: $size-48;
-    color: $red;
+    color: $primary;
     font-weight: 900;
     font-style: italic;
-    text-align: center;
   }
 }
 
@@ -193,7 +176,6 @@
   background: url('/assets/images/index-bg.png') no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 80px 0;
 
   @include pad {
     background: url('/assets/images/index-bg-md.png') no-repeat;
@@ -210,10 +192,8 @@
 
   h2 {
     font-size: $size-48;
-    color: $white;
+    color: $light;
     font-weight: bold;
-    margin-bottom: 48px;
-    text-align: center;
 
     @include mobile {
       font-size: $size-24;
@@ -223,7 +203,6 @@
 }
 
 .collab-detail {
-  display: flex;
 
   @include pad {
     flex-direction: column;
@@ -238,11 +217,10 @@
 
   h3 {
     font-size: $size-48;
-    text-align: center;
-    color: $red;
+    color: $primary;
     font-weight: 900;
     font-style: italic;
-    background: $white;
+    background: $light;
     padding: 8px 0;
   }
 
@@ -269,7 +247,6 @@
 /*section--recommend*/
 
 .recommend {
-  padding: 80px 0;
 
   @include mobile {
     padding: 40px 0;
@@ -278,9 +255,7 @@
   h2 {
     font-size: $size-48;
     font-weight: bold;
-    color: $dark-red;
-    margin-bottom: 48px;
-    text-align: center;
+    color: $secondary;
 
     @include mobile {
       font-size: $size-24;
@@ -291,8 +266,6 @@
 
 
 .recommend-card {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
   li {
@@ -300,7 +273,6 @@
     box-shadow: 0px 2px 6px #00000029;
     border: 1px solid #DEE2E6;
     border-radius: 4px;
-    display: flex;
     flex-direction: column;
 
     @include pad {
@@ -322,7 +294,6 @@
 
   .card-content {
     padding: 16px;
-    display: flex;
     flex-direction: column;
     flex-grow: 1;
   }
@@ -351,8 +322,7 @@
 /*section--contact*/
 
 .contact {
-  background: $beige;
-  padding: 80px 0;
+  background: $success;
 
   @include mobile {
     padding: 40px 0;
@@ -361,9 +331,7 @@
   h2 {
     font-size: $size-48;
     font-weight: bold;
-    color: $dark-red;
-    margin-bottom: 48px;
-    text-align: center;
+    color: $secondary;
 
     @include pad {
       margin-bottom: 24px;
@@ -376,7 +344,6 @@
 
   p {
     font-size: $size-20;
-    margin-bottom: 24px;
 
     @include pad {
       font-size: $size-16;
@@ -401,15 +368,19 @@
     width: 100%;
   }
 
+  input,
+  textarea {
+    background: transparent;
+    border: 1px solid $dark;
+  }
+
   input:not(.agreement) {
     width: 100%;
     display: block;
-    margin-bottom: 16px;
     padding: 6px 12px;
   }
 
   label:not(.agreement) {
-    margin-bottom: 8px;
 
     @include pad {
       margin-bottom: 16px;
@@ -419,15 +390,15 @@
   input[type="submit"] {
     width: 66.66%;
     margin: 0 auto;
-    color: $white;
+    color: $light;
     padding: 16px 0;
     margin-top: 48px;
     border: none;
     font-size: $size-24;
-    background: $red;
+    background: $primary;
 
     &:hover {
-      background: $dark-red;
+      background: $secondary;
     }
 
     @include pad {
@@ -442,7 +413,10 @@
   }
 
   .comment {
-    height: 136px;
+    display: block;
+    resize: none;
+    width: 100%;
+    min-height: 136px;
   }
 
   span {
